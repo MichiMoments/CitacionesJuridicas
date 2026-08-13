@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($py = \"c:\\\\Users\\\\DAVID\\\\Escritorio\\\\WORKuniandes\\\\CitacionesJuridicas\\\\AgenteTriage\\\\venv\\\\Scripts\\\\python.exe\"; $s = \"C:\\\\Users\\\\DAVID\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DAVID-Escritorio-WORKuniandes-CitacionesJuridicas-AgenteTriage\\\\29705575-735b-4d48-a538-d1c4f8a687ba\\\\scratchpad\"; & $py \"$s\\\\check_e2e.py\")"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+# Núcleo del agente de triage de citaciones jurídicas.
+# Versiones exactas: son las mismas que ya conviven en el Python global de esta
+# máquina, así que se sabe que resuelven juntas.
+langchain==1.3.14              # expone langchain.agents.create_agent + middleware
+langchain-core==1.4.9          # @tool, BaseTool
+langchain-google-genai==4.2.7  # ChatGoogleGenerativeAI (Gemini vía API de Gemini)
+pydantic==2.12.5               # esquema de salida estructurada
+python-dotenv==1.1.1           # carga GOOGLE_API_KEY desde el .env de la raíz
+
+# langgraph y google-genai entran como dependencias transitivas (globalmente
+# resolvieron a 1.2.9 y 2.12.1). Pinnearlas solo si la resolución se desvía.
+
+# --- OPCIONAL / PENDIENTE: respaldo web de search() ---
+# Hoy search() es solo corpus local. Ver el TODO en citaciones_agent/busqueda.py.
+# tavily-python        # requiere TAVILY_API_KEY; preferido, pensado para agentes
+# ddgs                 # sin clave; scraper NO oficial de DuckDuckGo, firmas
+#                      # volátiles entre versiones menores -> pinnear exacto

@@ -1,0 +1,11 @@
+# Secretos locales (claves de API): nunca al repositorio.
+.env
+
+# Artefactos de Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Entornos virtuales
+.venv/
+venv/
