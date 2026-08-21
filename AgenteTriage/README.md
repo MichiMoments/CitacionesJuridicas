@@ -52,7 +52,7 @@ print(resultado.dias_habiles, resultado.resumen)
 El modelo nunca calcula ni convierte nada: copia `dias_habiles_recomendados`.
 
 ## Arquitectura
-
+ 
 ```
 texto  ─┐
 schemas─┼─> corpus ─┬─> lectura ─┐
